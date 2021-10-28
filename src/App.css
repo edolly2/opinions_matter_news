@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 3.2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.icons {
+  color: var(--primary-clr-dark);
+  font-size: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icons:hover {
+  color: var(--secondary-clr-light);
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profile-menu-icon {
+  font-size: 4rem;
+}
+
+.profile-nav-container {
+  position: absolute;
+  top: 0;
+  /* right: 0; */
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: flex-start; */
+  width: 100%;
+}
+
+.profile-nav-container nav {
+  background-color: var(--primary-clr-light);
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+}
+.profile-nav-container ul {
+  width: 40rem;
+  background-color: var(--primary-clr-light);
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  /* align-items: flex-end; */
+  /* gap: 1.6rem; */
+}
+
+.profile-nav-container li {
+  display: flex;
   align-items: center;
+  padding: 0.8rem 1.6rem;
+  cursor: pointer;
+}
+
+.profile-nav-container svg {
+  margin-right: 0.8rem;
+}
+
+.profile-nav-container li:hover svg,
+.profile-nav-container li:hover {
+  color: var(--primary-clr-light);
+  background-color: var(--primary-clr-dark);
+}
+
+.profile-menu-close {
+  display: flex;
+  cursor: pointer;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: var(--primary-clr-dark);
+  color: var(--primary-clr-light);
 }
